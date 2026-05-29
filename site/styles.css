@@ -5,7 +5,7 @@
     --encre-secondaire: #2B4C7E;
     --texte-principal: #16222E;
     --texte-secondaire: #555;
-    --accent-bleu: #2563EB;
+    --accent-bleu: #0051ffea;
     --accent-terre: #C17455;
     --bordure-subtile: #E3DBC8;
     --succes: #10B981;
@@ -19,21 +19,22 @@
 
 body {
     font-family: 'Inter', sans-serif;
+    font-size: 17px;
     line-height: 1.6;
     color: var(--texte-principal);
     background-color: var(--blanc);
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 24px;
 }
 
 /* Header */
 header {
     background-color: white;
-    padding: 20px 0;
+    padding: 10px 0;
     position: sticky;
     top: 0;
     z-index: 100;
@@ -51,7 +52,7 @@ header {
     align-items: center;
     gap: 10px;
     font-weight: 600;
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: var(--accent-bleu);
     text-decoration: none;
     font-weight: bold;
@@ -66,12 +67,13 @@ header {
 .nav-links a {
     text-decoration: none;
     color: var(--texte-secondaire);
+    font-size: 1rem;
     font-weight: 500;
     transition: color 0.3s;
 }
 
 .nav-links a:hover {
-    color: var(--encre);
+    color: var(--accent-bleu);
 }
 
 .nav-actions {
@@ -82,37 +84,41 @@ header {
 
 .language-toggle {
     display: flex;
-    gap: 5px;
 }
 
 .lang-btn {
     padding: 8px 12px;
     border: 1px solid var(--bordure-subtile);
     background: white;
-    border-radius: 6px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
     font-size: 0.9rem;
     cursor: pointer;
     transition: all 0.3s;
 }
 
 .lang-btn.active {
-    background: var(--encre);
+    background: var(--accent-bleu);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
     color: white;
-    border-color: var(--encre);
+    border-color: var(--accent-bleu);
 }
 
 .download-btn {
     background: var(--accent-bleu);
     color: white;
-    padding: 10px 20px;
+    padding: 8px 20px;
     border: none;
-    border-radius: 6px;
+    border-radius: 10px;
     font-weight: 500;
     cursor: pointer;
     text-decoration: none;
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 10px;
     transition: all 0.3s;
 }
 
@@ -120,3 +126,101 @@ header {
     background: #1D4ED8;
     transform: translateY(-2px);
 }
+
+.hero {
+    width: min(1400px, 100%);
+    margin: 60px auto 0;
+    text-align:center;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    color: var(--encre);
+    margin: 0 0 12px 0;
+    line-height: 1.2;
+}
+
+.hero-content p {
+    font-size: 1.25rem;
+    color: var(--texte-secondaire);
+    margin-bottom: 30px;
+}
+
+.text-bleu {
+    color: var(--accent-bleu);
+    gap: 5px;
+}
+
+.hero-buttons {
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.DL {
+    justify-content: center;
+    background-color: var(--accent-bleu);
+    color: white;
+    font-size: 1.05rem;
+    padding: 17px 40px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s;
+}
+
+.DL:hover {
+    background: #1D4ED8;
+    transform: translateY(-2px);
+}
+
+.SDK{
+    justify-content: center;
+    background-color: var(---white);
+    color: var(--accent-bleu);
+    font-size: 1.05rem;
+    padding: 16px 40px;
+    border: 2px solid var(--accent-bleu);
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s;
+    margin-left: 20px;
+}
+
+.SDK:hover {
+    background: rgba(0, 123, 255, 0.05);
+    transform: translateY(-2px);
+}
+
+.hero-content2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 30px;
+    font-size: 1.0rem;
+}
+
+.hero-content2 p {
+    margin: 0;
+    color: var(--encre-secondaire);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.hero-content2 p::before {
+    content: "✓";
+    color: #10B981;
+    font-weight: 700;
+}
+

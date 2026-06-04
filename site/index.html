@@ -14,8 +14,8 @@
                 <a href="#" class="logo">ClinVCF-OS</a>
                 <div class="nav-links">
                     <ul>
-                        <li><a href="#">Philosophy</a></li>
-                        <li><a href="#">Modules</a></li>
+                        <li><a href="#philosphy-section">Philosophy</a></li>
+                        <li><a href="#modules-section">Modules</a></li>
                         <li><a href="#">ClinStore</a></li>
                         <li><a href="#">SDK</a></li>
                         <li><a href="#">Documentation</a></li>
@@ -28,19 +28,24 @@
                         <button class="lang-btn active">FR</button>
                         <button class="lang-btn">EN</button>
                     </div>
-                    <a href="#" class="download-btn">Télécharger</a>
+                    <a href="#download-section" class="download-btn">Télécharger</a>
                 </div>
             </nav>
         </div>
     </header>
+
     <div class="hero">
         <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-pulse"></span>
+                <span class="badge-text" id="hero-badge-text">v0.1 -- Research Use Only -- SDK Open Source</span>
+            </div>
             <h1>Plateforme <span class="text-bleu">modulaire</span><br> d'analyse de variants<br> génétiques</h1>
             <p>Solution unifiée pour le chargement, la visualisation et la prédiction de variants génétiques.<br> Conçu pour les professionnels de la génomique et de la recherche clinique. </p>
         </div>
         <div class="hero-buttons">
-            <a class="DL" href="#">Télécharger gratuitement</a>
-            <a class="SDK" href="#">&lt;/&gt; Explorer le SDK </a>
+            <a class="DL" href="#download-section">Télécharger gratuitement</a>
+            <a class="SDK" href="#">&lt;/&gt; Explorer le SDK</a>
         </div>
         <div class="hero-content2">
             <p>Installation en 2 minutes</p>
@@ -48,16 +53,30 @@
             <p>Aucune télémétrie</p>
         </div>
     </div>
+
     <div class="interface">
         <h1>Interface intuitive et puissante</h1>
         <p>Visualisez et analyser vos variants génétiques en quelques clics</p>
     </div>
+
     <div class="tab-interface">
         <div class="tab-buttons">
-            <a href="#" class="vcf-loader">VCF Loader</a>
-            <a href="#" class="data-viewer">Data Viewer</a>
-            <a href="#" class="predsoma">PredSoma <span class="premium">Premium</span></a>
-            <a href="#" class="predconst">PredConst <span class="premium">Premium</span></a>
+            <a href="#" class="tab-btn active">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 3v18M3 9h6M3 15h6"/></svg>
+                VCF Loader
+            </a>
+            <a href="#" class="tab-btn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z"/></svg>
+                Data Viewer
+            </a>
+            <a href="#" class="tab-btn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2l2 7h7l-5.5 4 2 7L12 16l-5.5 4 2-7L3 9h7z"/></svg>
+                PredSoma <span class="premium">Premium</span>
+            </a>
+            <a href="#" class="tab-btn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2l2 7h7l-5.5 4 2 7L12 16l-5.5 4 2-7L3 9h7z"/></svg>
+                PredConst <span class="premium">Premium</span>
+            </a>
         </div>
         <div class="tab">
             <div class="tab-content">
@@ -69,33 +88,144 @@
                         <th>Impact</th>
                     </tr>
                     <tr>
-                        <td>BRCA1</td>
-                        <td>c.5266dupC</td>
-                        <td class="pathogenic">Pathogenic</td>
-                        <td class="high">High</td>
+                        <td class="gene">BRCA1</td>
+                        <td class="variant">c.5266dupC</td>
+                        <td><span class="badge pathogenic">Pathogenic</span></td>
+                        <td><span class="badge high">High</span></td>
                     </tr>
                     <tr>
-                        <td>TP53</td>
-                        <td>c.524G>A</td>
-                        <td class="l-pathogenic">Likely pathogenic</td>
-                        <td class="high">High</td>
+                        <td class="gene">TP53</td>
+                        <td class="variant">c.524G&gt;A</td>
+                        <td><span class="badge l-pathogenic">Likely pathogenic</span></td>
+                        <td><span class="badge high">High</span></td>
                     </tr>
                     <tr>
-                        <td>EGFR</td>
-                        <td>c.2573T>G</td>
-                        <td class="uncertain">Uncertain</td>
-                        <td class="moderate">Moderate</td>
+                        <td class="gene">EGFR</td>
+                        <td class="variant">c.2573T&gt;G</td>
+                        <td><span class="badge uncertain">Uncertain</span></td>
+                        <td><span class="badge moderate">Moderate</span></td>
                     </tr>
                     <tr>
-                        <td>KRAS</td>
-                        <td>c.35G>A</td>
-                        <td class="benign">Benign</td>
-                        <td class="low">Low</td>
+                        <td class="gene">KRAS</td>
+                        <td class="variant">c.35G&gt;A</td>
+                        <td><span class="badge benign">Benign</span></td>
+                        <td><span class="badge low">Low</span></td>
                     </tr>
-               </table> 
+               </table>
             </div>
         </div>
     </div>
-    
+
+    <section id="philosphy-section" class="philosophy">
+        <h1>Notre philosophie</h1>
+        <p>Trois principes fondamentaux qui guident le développement de ClinVCF-OS</p>
+        <div class="container">
+            <div class="philosphy-cards">
+                <div class="card">
+                    <p>01</p>
+                    <h2>Plateforme ouverte</h2>
+                    <p>ClinVCF-OS est conçu comme une plateforme open-source permettant à la communauté scientifique de contribuer et d'innover. Transparence totale du code et des algorithmes pour garantir la fiabilité des analyses</p>
+                </div>
+                <div class="card">
+                    <p>02</p>
+                    <h2>Ecosystème modulaire</h2>
+                    <p>Architecture modulaire permettant d'activer uniquement les fonctionnalités nécessaires. Installez les modules de base gratuitement et ajoutez des modules premium selon vos besoins spécifiques d'analyse.</p>
+                </div>
+                <div class="card">
+                    <p>03</p>
+                    <h2>Développement communautaire</h2>
+                    <p>Une comunauté active de chercheur, cliniciens et développeurs qui contribuent constamment à l'amélioration de la plateforme. Partagez vos workflows et bénéficiez de l'expertise collective.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="modules-section" class="modules-section">
+        <h1>Modules disponibles</h1>
+        <p>Composez votre solution sur mesure avec nos modules spécialisés</p>
+        <div class="container">
+            <h2><span class="modules-gratuit">Gratuit</span>Système de base</h2>
+            <div class="modules-cards-gratuit">
+                <div class="cards">
+                    <h3>VCF Loader</h3>
+                    <ul>
+                        <li>Import de fichiers VCF/BCF standard</li>
+                        <li>Validation automatique du format</li>
+                        <li>Support des fichiers compressés (gzip)</li>
+                        <li>Détection automatique de l'encodage</li>
+                    </ul>
+                    <hr>
+                    <p><span class="community">Community: </span>Usage illimité</p>
+                </div>
+                <div class="cards">
+                    <h3>Data Viewer</h3>
+                    <ul>
+                        <li>Visualisation interactive des variants</li>
+                        <li>Filtrage avancé multi-critères</li>
+                        <li>Export des données filtrées</li>
+                        <li>Annotations ClinVar intégrées</li>
+                    </ul>
+                    <hr>
+                    <p><span class="community">Community: </span>Usage illimité</p>
+                </div>
+                <div class="cards">
+                    <h3>Basic Annotations</h3>
+                    <ul>
+                        <li>Annotation génomiques de base</li>
+                        <li>Fréquences alléliques (gnomAD)</li>
+                        <li>Impact sur les protéines</li>
+                        <li>Conservation inter-espèces</li>
+                    </ul>
+                    <hr>
+                    <p><span class="community">Community: </span>Usage illimité</p>
+                </div>
+            </div>
+            <h2><span class="modules-premium">Premium </span>Modules avancés</h2>
+            <div class="modules-cards modules-cards-premium">
+                <div class="cards">
+                    <h3>PredSoma</h3>
+                    <ul>
+                        <li>Prédiction pathogénicité variants somatiques</li>
+                        <li>Algorithmes ML spécialisés cancer</li>
+                        <li>Intégration bases données tumorales</li>
+                        <li>Scoring personnalisé par type tumoral</li>
+                    </ul>
+                    <hr>
+                    <p><span class="require">Requis: </span>Tier Pro+</p>
+                </div>
+                <div class="cards">
+                    <h3>PredConst</h3>
+                    <ul>
+                        <li>Prédiction variants constitutionnels</li>
+                        <li>Analyse héritabilité mendélienne</li>
+                        <li>Détection variants de novo</li>
+                        <li>Rapport clinique automatisé</li>
+                    </ul>
+                    <hr>
+                    <p><span class="require">Requis: </span>Tier Pro+</p>
+                </div>
+                <div class="cards">
+                    <h3>Advanced Analytics</h3>
+                    <ul>
+                        <li>Analyse de cohortes</li>
+                        <li>Comparaison multi-échantillons</li>
+                        <li>Statistiques population</li>
+                        <li>Visualisation avancées (Manhattan plots)</li>
+                    </ul>
+                    <hr>
+                    <p><span class="require">Requis: </span>Tier Pro+</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="download-section" class="download-section">
+        <div class="container">
+            <div class="download-header">
+                <h2>Télécharger ClinVCF-OS</h2>
+                <p>Accédez à la dernière version stable adaptée à votre système d'exploitation</p>
+            </div>
+        </div>
+    </section>
 </body>
 </html>

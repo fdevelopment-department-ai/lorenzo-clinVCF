@@ -1,16 +1,46 @@
 :root {
+    /* Couleurs principales */
     --blanc: #FFFFFF;
     --papier: #FFFDF7;
-    --encre: #16222E;
-    --encre-secondaire: #2B4C7E;
-    --texte-principal: #16222E;
-    --texte-secondaire: #555;
-    --accent-bleu: #0051ffea;
-    --accent-terre: #C17455;
-    --bordure-subtile: #E3DBC8;
+    --encre: #111827;
+    --encre-secondaire: #374151;
+    --texte-principal: #111827;
+    --texte-secondaire: #4B5563;
+    --accent-bleu: #2563EB;
+    --accent-bleu-hover: #1D4ED8;
+    --accent-bleu-clair: #DBEAFE;
+    --accent-bleu-border: #BFDBFE;
+
+    /* Couleurs secondaires */
+    --violet: #9333EA;
+    --violet-clair: #FAF5FF;
+    --violet-border: #E9D5FF;
+
+    /* Couleurs de statut */
     --succes: #10B981;
-    --grey: #f7f7f7c2;
-    --grey2: #eeeded;
+    --succes-clair: #D1FAE5;
+    --danger: #EF4444;
+    --danger-clair: #FEE2E2;
+    --warning: #F59E0B;
+    --warning-clair: #FFEDD5;
+    --incertain: #FEF3C7;
+
+    /* Nuances de gris */
+    --gris-900: #111827;
+    --gris-700: #374151;
+    --gris-600: #4B5563;
+    --gris-500: #6B7280;
+    --gris-400: #9CA3AF;
+    --gris-300: #D1D5DB;
+    --gris-200: #E5E7EB;
+    --gris-100: #F3F4F6;
+    --gris-50: #F9FAFB;
+
+    /* Bordure subtile */
+    --bordure-subtile: #E5E7EB;
+    --grey: var(--gris-100);
+    --grey2: var(--gris-200);
+    --accent-terre: #C17455;
 }
 
 html {
@@ -139,7 +169,7 @@ header.scrolled {
 }
 
 .download-btn:hover {
-    background: #1D4ED8;
+    background: var(--accent-bleu-hover);
     transform: translateY(-2px);
 }
 
@@ -188,7 +218,7 @@ header.scrolled {
 .badge-pulse {
     width: 8px;
     height: 8px;
-    background-color: #10B981;
+    background-color: var(--succes);
     border-radius: 50%;
     animation: pulse 2s infinite;
 }
@@ -217,7 +247,7 @@ header.scrolled {
 }
 
 .DL:hover {
-    background: #1D4ED8;
+    background: var(--accent-bleu-hover);
     transform: translateY(-2px);
 }
 
@@ -263,7 +293,7 @@ header.scrolled {
 
 .hero-content2 p::before {
     content: "✓";
-    color: #10B981;
+    color: var(--succes);
     font-weight: 700;
 }
 
@@ -780,13 +810,13 @@ header.scrolled {
 }
 
 .modules-section .modules-gratuit {
-    background: #DCFCE7;
-    color: #047857;
+    background: var(--succes-clair);
+    color: var(--succes);
 }
 
 .modules-section .modules-premium {
-    background: #EDE9FE;
-    color: #5B21B6;
+    background: var(--violet-clair);
+    color: var(--violet);
 }
 
 .modules-section .modules-cards-gratuit,
@@ -819,18 +849,18 @@ header.scrolled {
 
 .modules-section .cards:hover {
     transform: none;
-    border-color: rgba(0, 81, 255, 0.8);
-    box-shadow: -6px 8px 22px rgba(0, 81, 255, 0.14), 6px 8px 22px rgba(0, 81, 255, 0.1);
+    border-color: rgba(37, 99, 235, 0.8);
+    box-shadow: -6px 8px 22px rgba(37, 99, 235, 0.14), 6px 8px 22px rgba(37, 99, 235, 0.1);
 }
 
 .modules-section .modules-cards.modules-cards-premium .cards {
-    background: #F5F3FF;
-    border-color: rgba(124, 58, 237, 0.34);
+    background: var(--violet-clair);
+    border-color: rgba(147, 51, 234, 0.34);
 }
 
 .modules-section .modules-cards.modules-cards-premium .cards:hover {
-    border-color: rgba(124, 58, 237, 0.8);
-    box-shadow: -6px 8px 22px rgba(124, 58, 237, 0.16), 6px 8px 22px rgba(124, 58, 237, 0.1);
+    border-color: rgba(147, 51, 234, 0.8);
+    box-shadow: -6px 8px 22px rgba(147, 51, 234, 0.16), 6px 8px 22px rgba(147, 51, 234, 0.1);
 }
 
 .modules-section .cards h3 {
@@ -861,13 +891,13 @@ header.scrolled {
     position: absolute;
     left: 0;
     top: 0;
-    color: #047857;
+    color: var(--succes);
     font-size: 0.85rem;
     line-height: 1.4;
 }
 
 .modules-section .modules-cards.modules-cards-premium .cards li:before {
-    color: #5B21B6;
+    color: var(--violet);
 }
 
 .modules-section .cards hr {

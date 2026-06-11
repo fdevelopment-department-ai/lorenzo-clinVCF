@@ -1126,3 +1126,217 @@ header.scrolled {
 .modules-section .cards .require + span {
     font-weight: 400;
 }
+
+.download-section {
+    padding: 80px 24px;
+    background: linear-gradient(135deg, #f8f9fa 0%, #f0f1f3 100%);
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.download-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.download-header h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--encre);
+    margin-bottom: 16px;
+    line-height: 1.2;
+}
+
+.download-header p {
+    font-size: 1.1rem;
+    color: var(--texte-secondaire);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.os-selector {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.os-btn {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding: 24px 32px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 2px solid rgba(0, 0, 0, 0.08);
+    border-radius: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--texte-secondaire);
+    font-family: inherit;
+}
+
+.os-btn.btn--highlight {
+    background-color: white;
+    border-color: var(--accent-bleu);
+    color: var(--accent-bleu);
+    box-shadow: 0 12px 32px rgba(0, 81, 255, 0.25);
+    font-weight: 700;
+}
+
+.os-btn.btn--highlight::after {
+    content: "Votre OS";
+    position: absolute;
+    top: -10px;
+    right: -25px;
+    transform: rotate(30deg);
+    transform-origin: top right;
+    background-color: var(--accent-bleu);
+    color: white;
+    border-radius: 999px;
+    padding: 6px 10px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+.os-btn:hover:not(.btn--highlight) {
+    background-color: white;
+    border-color: var(--accent-bleu);
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(0, 81, 255, 0.15);
+}
+
+.os-icon {
+    width: 36px;
+    height: 36px;
+    color: inherit;
+}
+
+.download-list {
+    background-color: white;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.download-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.os-label {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--encre);
+    margin: 0 0 16px 0;
+    padding-bottom: 12px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.06);
+}
+
+.download-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20px;
+    background-color: #f9f9f9;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: 10px;
+    text-decoration: none;
+    color: var(--encre);
+    transition: all 0.2s ease;
+    cursor: pointer;
+    font-size: 0.95rem;
+}
+
+.download-link:hover {
+    background-color: rgba(0, 81, 255, 0.08);
+    color: var(--encre);
+    border-color: rgba(0, 81, 255, 0.3);
+    transform: translateX(4px);
+    box-shadow: 0 6px 16px rgba(0, 81, 255, 0.1);
+}
+
+.download-name {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.download-os {
+    display: inline-flex;
+    align-items: center;
+    padding: 4px 8px;
+    border-radius: 999px;
+    background-color: rgba(0, 81, 255, 0.08);
+    color: var(--accent-bleu);
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.download-link .download-size {
+    font-size: 0.85rem;
+    opacity: 0.7;
+}
+
+.download-link:hover .download-size {
+    opacity: 0.9;
+}
+
+.release-info {
+    text-align: center;
+    padding: 24px;
+    background-color: rgba(0, 81, 255, 0.04);
+    border-radius: 12px;
+    border: 1px solid rgba(0, 81, 255, 0.1);
+}
+
+#release-date {
+    font-size: 0.9rem;
+    color: var(--texte-secondaire);
+    font-weight: 500;
+    margin: 0;
+}
+
+#release-link {
+    margin: 8px 0 0 0;
+}
+
+#release-link a {
+    color: var(--accent-bleu);
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+#release-link a:hover {
+    text-decoration: underline;
+}
+
+/* Surbrillance pour les liens de téléchargement */
+.download-link.btn--highlight {
+    background-color: white;
+    border-color: var(--accent-bleu);
+    color: var(--accent-bleu);
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.2);
+    font-weight: 700;
+}
+
+.download-link.btn--highlight .download-os {
+    background-color: var(--accent-bleu);
+    color: white;
+}
+
+.download-link.btn--highlight .download-name span:not(.download-os) {
+    color: var(--encre);
+}

@@ -900,6 +900,201 @@ header.scrolled {
     color: var(--violet);
 }
 
+.tarif-section {
+    padding: 80px 24px;
+    background: var(--gris-50);
+}
+
+.tarif-section .container {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 40px;
+    background: #F8FAFC;
+    border: 1px solid var(--gris-200);
+    border-radius: 28px;
+    box-shadow: 0 24px 60px rgba(15, 23, 42, 0.08);
+}
+
+.tarif-intro {
+    text-align: center;
+    max-width: 720px;
+    margin: 0 auto 40px;
+}
+
+.tarif-intro .section-label {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 16px;
+    border-radius: 9999px;
+    background: var(--accent-bleu-clair);
+    color: var(--accent-bleu);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.tarif-intro h1 {
+    font-size: 2.3rem;
+    font-weight: 700;
+    color: var(--gris-900);
+    margin: 18px 0 12px;
+    line-height: 1.12;
+}
+
+.tarif-intro p {
+    color: var(--texte-secondaire);
+    font-size: 1rem;
+    line-height: 1.8;
+    margin: 0 auto;
+}
+
+.tarif-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(240px, 1fr));
+    gap: 24px;
+}
+
+.tarif-card {
+    background: white;
+    border-radius: 24px;
+    border: 1px solid rgba(15, 23, 42, 0.08);
+    padding: 30px 24px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    box-shadow: 0 18px 40px rgba(15, 23, 42, 0.06);
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.tarif-card:hover {
+    transform: translateY(-3px);
+    border-color: rgba(37, 99, 235, 0.28);
+    box-shadow: 0 22px 50px rgba(15, 23, 42, 0.12);
+}
+
+.tarif-card.featured {
+    background: linear-gradient(180deg, #ffffff 0%, #eff7ff 100%);
+    border-color: rgba(37, 99, 235, 0.32);
+}
+
+.promotion-tarif {
+    align-self: flex-start;
+    background: rgba(37, 99, 235, 0.1);
+    color: var(--accent-bleu);
+    padding: 8px 14px;
+    border-radius: 9999px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin-bottom: 4px;
+}
+
+.tarif-card h3 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--gris-900);
+    margin: 0;
+}
+
+.tarif-card h2 {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--encre);
+    margin: 0;
+    line-height: 1.05;
+}
+
+.tarif-mois {
+    font-size: 1rem;
+    color: var(--texte-secondaire);
+    font-weight: 500;
+    margin-left: 6px;
+}
+
+.tarif-card p {
+    color: var(--texte-secondaire);
+    line-height: 1.8;
+    margin: 0;
+}
+
+.tarif-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 10px;
+    color: var(--texte-secondaire);
+    font-size: 0.95rem;
+}
+
+.tarif-card li {
+    position: relative;
+    padding-left: 1.4rem;
+}
+
+.tarif-card li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: var(--accent-bleu);
+    font-size: 1rem;
+    line-height: 1.2;
+}
+
+.tarif-card a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 18px;
+    border-radius: 14px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: all 0.25s ease;
+}
+
+.download-gratuit {
+    background: var(--accent-bleu);
+    color: white;
+}
+
+.download-gratuit:hover {
+    background: var(--accent-bleu-hover);
+}
+
+.tarif-card a:not(.download-gratuit) {
+    background: rgba(37, 99, 235, 0.08);
+    color: var(--accent-bleu);
+    border: 1px solid transparent;
+}
+
+.tarif-contact {
+    background: transparent;
+    color: var(--accent-bleu);
+    border: 1px solid rgba(37, 99, 235, 0.18);
+}
+
+.tarif-note {
+    color: var(--texte-secondaire);
+    text-align: center;
+    font-size: 0.95rem;
+    margin-top: 20px;
+}
+
+.tarif-note a.conditions {
+    color: var(--accent-bleu);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.tarif-note a.conditions:hover {
+    text-decoration: underline;
+}
+
+
 .modules-section .cards hr {
     border: none;
     height: 1px;
@@ -931,4 +1126,3 @@ header.scrolled {
 .modules-section .cards .require + span {
     font-weight: 400;
 }
-

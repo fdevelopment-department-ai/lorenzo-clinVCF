@@ -4,22 +4,22 @@
     <meta charset="UTF-8">
     <title>ClinVCF-OS</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/responsive.css">
 </head>
 <body>
-    <!-- Header -->
     <header>
         <div class="container">
             <nav class="navbar">
                 <a href="#" class="logo">ClinVCF-OS</a>
                 <div class="nav-links">
                     <ul>
-                        <li><a href="#philosphy-section">Philosophy</a></li>
-                        <li><a href="#modules-section">Modules</a></li>
-                        <li><a href="#">ClinStore</a></li>
-                        <li><a href="#">SDK</a></li>
-                        <li><a href="#">Documentation</a></li>
-                        <li><a href="#tarifs-section">Tarifs</a></li>
+                        <li><a data-i18n="nav-philosophy" href="#philosphy-section">Philosophie</a></li>
+                        <li><a data-i18n="nav-modules" href="#modules-section">Modules</a></li>
+                        <li><a data-i18n="nav-clinstore" href="#">ClinStore</a></li>
+                        <li><a data-i18n="nav-sdk" href="#">SDK</a></li>
+                        <li><a data-i18n="nav-docs" href="#">Documentation</a></li>
+                        <li><a data-i18n="nav-tarifs" href="#tarifs-section">Tarifs</a></li>
                         <li><a href="#faq-section">FAQ</a></li>
                     </ul>
                 </div>
@@ -28,7 +28,7 @@
                         <button class="lang-btn active">FR</button>
                         <button class="lang-btn">EN</button>
                     </div>
-                    <a href="#download-section" class="download-btn">Télécharger</a>
+                    <a data-i18n="btn-download" href="#download-section" class="download-btn">Télécharger</a>
                 </div>
             </nav>
         </div>
@@ -40,23 +40,23 @@
                 <span class="badge-pulse"></span>
                 <span class="badge-text" id="hero-badge-text"><strong id="release-version"></strong> -- Research Use Only -- SDK Open Source</span>
             </div>
-            <h1>Plateforme <span class="text-bleu">modulaire</span><br> d'analyse de variants<br> génétiques</h1>
-            <p>Solution unifiée pour le chargement, la visualisation et la prédiction de variants génétiques.<br> Conçu pour les professionnels de la génomique et de la recherche clinique. </p>
+            <h1 data-i18n="hero-text">Plateforme <span class="text-bleu">modulaire</span><br> d'analyse de variants<br> génétiques</h1>
+            <p data-i18n="hero-text-2">Solution unifiée pour le chargement, la visualisation et la prédiction de variants génétiques.<br> Conçu pour les professionnels de la génomique et de la recherche clinique.</p>
         </div>
         <div class="hero-buttons">
-            <a class="DL" href="#download-section">Télécharger gratuitement</a>
-            <a class="SDK" href="#">&lt;/&gt; Explorer le SDK</a>
+            <a class="DL" data-i18n="btn-download-2" href="#download-section">Télécharger gratuitement</a>
+            <a class="SDK" data-i18n="sdk-btn" href="#">&lt;/&gt; Explorer le SDK</a>
         </div>
         <div class="hero-content2">
-            <p>Installation en 2 minutes</p>
-            <p>Multi-plateforme</p>
-            <p>Aucune télémétrie</p>
+            <p data-i18n="hero-content-1">Installation en 2 minutes</p>
+            <p data-i18n="hero-content-2">Multi-plateforme</p>
+            <p data-i18n="hero-content-3">Aucune télémétrie</p>
         </div>
     </div>
 
     <div class="interface">
-        <h1>Interface intuitive et puissante</h1>
-        <p>Visualisez et analyser vos variants génétiques en quelques clics</p>
+        <h1 data-i18n="mockup-title">Interface intuitive et puissante</h1>
+        <p data-i18n="mockup-subtitle">Visualisez et analyser vos variants génétiques en quelques clics</p>
     </div>
 
     <div class="tab-interface">
@@ -117,32 +117,32 @@
     </div>
 
     <section id="philosphy-section" class="philosophy">
-        <h1>Notre philosophie</h1>
-        <p>Trois principes fondamentaux qui guident le développement de ClinVCF-OS</p>
+        <h1 data-i18n="philosophy-title">Notre philosophie</h1>
+        <p data-i18n="philosophy-subtitle">Trois principes fondamentaux qui guident le développement de ClinVCF-OS</p>
         <div class="container">
             <div class="philosphy-cards">
                 <div class="card">
                     <p>01</p>
-                    <h2>Plateforme ouverte</h2>
-                    <p>ClinVCF-OS est conçu comme une plateforme open-source permettant à la communauté scientifique de contribuer et d'innover. Transparence totale du code et des algorithmes pour garantir la fiabilité des analyses</p>
+                    <h2 data-i18n="card1-title">Plateforme ouverte</h2>
+                    <p data-i18n="card1-text">ClinVCF-OS est conçu comme une plateforme open-source permettant à la communauté scientifique de contribuer et d'innover. Transparence totale du code et des algorithmes pour garantir la fiabilité des analyses</p>
                 </div>
                 <div class="card">
                     <p>02</p>
-                    <h2>Ecosystème modulaire</h2>
-                    <p>Architecture modulaire permettant d'activer uniquement les fonctionnalités nécessaires. Installez les modules de base gratuitement et ajoutez des modules premium selon vos besoins spécifiques d'analyse.</p>
+                    <h2 data-i18n="card2-title">Ecosystème modulaire</h2>
+                    <p data-i18n="card2-text">Architecture modulaire permettant d'activer uniquement les fonctionnalités nécessaires. Installez les modules de base gratuitement et ajoutez des modules premium selon vos besoins spécifiques d'analyse.</p>
                 </div>
                 <div class="card">
                     <p>03</p>
-                    <h2>Développement communautaire</h2>
-                    <p>Une comunauté active de chercheur, cliniciens et développeurs qui contribuent constamment à l'amélioration de la plateforme. Partagez vos workflows et bénéficiez de l'expertise collective.</p>
+                    <h2 data-i18n="card3-title">Développement communautaire</h2>
+                    <p data-i18n="card3-text">Une comunauté active de chercheur, cliniciens et développeurs qui contribuent constamment à l'amélioration de la plateforme. Partagez vos workflows et bénéficiez de l'expertise collective.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <section id="modules-section" class="modules-section">
-        <h1>Modules disponibles</h1>
-        <p>Composez votre solution sur mesure avec nos modules spécialisés</p>
+        <h1 data-i18n="modules-title">Modules disponibles</h1>
+        <p data-i18n="modules-subtitle">Composez votre solution sur mesure avec nos modules spécialisés</p>
         <div class="container">
             <h2><span class="modules-gratuit">Gratuit</span>Système de base</h2>
             <div class="modules-cards-gratuit">
@@ -222,92 +222,169 @@
     <section id="tarif-section" class="tarif-section">
         <div class="container">
             <div class="tarif-intro">
-                <span class="section-label">Tarifs</span>
-                <h1>Offres modulaires pour la recherche et la clinique</h1>
-                <p>Choisissez la formule adaptée à votre usage, avec des fonctionnalités claires, un support prioritaire et une tarification transparente.</p>
+                <span data-i18n="tarif-label" class="section-label">Tarifs</span>
+                <h1 data-i18n="tarif-title">Offres modulaires pour la recherche et la clinique</h1>
+                <p data-i18n="tarif-subtitle">Choisissez la formule adaptée à votre usage, avec des fonctionnalités claires, un support prioritaire et une tarification transparente.</p>
             </div>
             <div class="tarif-grid">
-            <div class="tarif-card">
-                <h3>Community</h3>
-                <h2>Gratuit</h2>
-                <p>Pour découvrir et tester la plateforme</p>
-                <a class="download-gratuit" href="#download-section">Télécharger</a>
-                <ul>
-                    <li>Modules de base (VCF Loader, Data Viewer)</li>
-                    <li>Annotations génomiques standards</li>
-                    <li>Usage limité à 100 variants/jour</li>
-                    <li>Support communautaire (forum)</li>
-                    <li>Mises à jour de sécurité</li>
-                    <li>Documentation complète</li>
-                </ul>
+                <div class="tarif-card">
+                    <h3>Community</h3>
+                    <h2>Gratuit</h2>
+                    <p>Pour découvrir et tester la plateforme</p>
+                    <a class="download-gratuit" href="#download-section">Télécharger</a>
+                    <ul>
+                        <li>Modules de base (VCF Loader, Data Viewer)</li>
+                        <li>Annotations génomiques standards</li>
+                        <li>Usage limité à 100 variants/jour</li>
+                        <li>Support communautaire (forum)</li>
+                        <li>Mises à jour de sécurité</li>
+                        <li>Documentation complète</li>
+                    </ul>
+                </div>
+                <div class="tarif-card featured">
+                    <p class="promotion-tarif">Early Adopter -40%</p>
+                    <h3>Pro</h3>
+                    <h2>29€ <span class="tarif-mois">/mois</span></h2>
+                    <p>Pour les chercheurs et cliniciens individuels</p>
+                    <a href="#">S'abonner</a>
+                    <ul>
+                        <li>Tous les modules de base</li>
+                        <li>PredSoma & PredConst inclus</li>
+                        <li>Usage illimité</li>
+                        <li>Support prioritaire par email</li>
+                        <li>Exports avancés (Excel, CSV, JSON)</li>
+                        <li>API REST complète</li>
+                        <li>Mises à jour automatiques</li>
+                        <li>Stockage cloud 50 Go</li>
+                    </ul>
+                </div>
+                <div class="tarif-card featured">
+                    <p class="promotion-tarif">Early Adopter -40%</p>
+                    <h3>Team</h3>
+                    <h2>199€<span class="tarif-mois">/mois</span></h2>
+                    <p>Pour les équipes et laboratoires</p>
+                    <a href="#">S'abonner</a>
+                    <ul>
+                        <li>Tous les modules Pro</li>
+                        <li>Advanced Analytics inclus</li>
+                        <li>Jusqu'à 10 utilisateurs</li>
+                        <li>Gestion centralisée des licenses</li>
+                        <li>Support prioritaire avec SLA</li>
+                        <li>Formation en ligne incluse</li>
+                        <li>Déploiement on-premise disponible</li>
+                        <li>Stockage cloud 500 Go</li>
+                        <li>Intégration SSO/LDAP</li>
+                    </ul>
+                </div>
+                <div class="tarif-card">
+                    <h3>Enterprise</h3>
+                    <h2>Sur mesure</h2>
+                    <p>Pour les institutions et hôpitaux</p>
+                    <a class="tarif-contact" href="#">Nous contacter</a>
+                    <ul>
+                        <li>Tous les modules Team</li>
+                        <li>Utilisateurs illimités</li>
+                        <li>Modules personnalisés sur demande</li>
+                        <li>Support dédié 24/7</li>
+                        <li>Conformité HIPAA/RGPD garantie</li>
+                        <li>Audit de sécurité annuel</li>
+                        <li>Infrastructure dédiée disponible</li>
+                        <li>Stockage cloud illimité</li>
+                        <li>Contrat de service personnalisé</li>
+                    </ul>
+                </div>
             </div>
-            <div class="tarif-card featured">
-                <p class="promotion-tarif">Early Adopter -40%</p>
-                <h3>Pro</h3>
-                <h2>29€ <span class="tarif-mois">/mois</span></h2>
-                <p>Pour les chercheurs et cliniciens individuels</p>
-                <a href="#">S'abonner</a>
-                <ul>
-                    <li>Tous les modules de base</li>
-                    <li>PredSoma & PredConst inclus</li>
-                    <li>Usage illimité</li>
-                    <li>Support prioritaire par email</li>
-                    <li>Exports avancés (Excel, CSV, JSON)</li>
-                    <li>API REST complète</li>
-                    <li>Mises à jour automatiques</li>
-                    <li>Stockage cloud 50 Go</li>
-                </ul>
+            <p data-i18n="tarif-note" class="tarif-note">Tous les prix sont hors taxes. Facturation mensuelle ou annuelle (-20%). <a class="conditions" href="#">Voir les conditions</a></p>
+        </div>
+    </section>
+
+    <section id="faq-section" class="faq-section">
+        <div class="faq-container">
+            <h1>Questions fréquentes</h1>
+            <p>Tout ce que vous devez savoir sur ClinVCF-OS</p>
+
+            <div class="faq-item">
+                <button class="faq-toggle">
+                    <span>ClinVCF-OS est-il gratuit ?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>ClinVCF-OS propose 4 niveaux de licence. Le tier Community est gratuit avec 5 analyses/mois. Pour des analyses illimitées, il faut souscrire un tier payant : Pro (€29/mois early-adopter), Team (€199/mois early-adopter, 5 sièges) ou Enterprise (sur devis). Le SDK qui permet de développer des modules tiers reste publié sous licence open-source MIT. Le code de l'application elle-même est propriétaire.</p>
+                </div>
             </div>
-            <div class="tarif-card featured">
-                <p class="promotion-tarif">Early Adopter -40%</p>
-                <h3>Team</h3>
-                <h2>199€<span class="tarif-mois">/mois</span></h2>
-                <p>Pour les équipes et laboratoires</p>
-                <a href="#">S'abonner</a>
-                <ul>
-                    <li>Tous les modules Pro</li>
-                    <li>Advanced Analytics inclus</li>
-                    <li>Jusqu'à 10 utilisateurs</li>
-                    <li>Gestion centralisée des licenses</li>
-                    <li>Support prioritaire avec SLA</li>
-                    <li>Formation en ligne incluse</li>
-                    <li>Déploiement on-premise disponible</li>
-                    <li>Stockage cloud 500 Go</li>
-                    <li>Intégration SSO/LDAP</li>
-                </ul>
+
+            <div class="faq-item">
+                <button class="faq-toggle">
+                    <span>Puis-je l'utiliser pour du diagnostic clinique ?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Non. ClinVCF-OS est livré en Research Use Only (RUO). Il n'est pas un dispositif médical et n'est pas destiné à des usages diagnostiques. Si vous souhaitez développer un module certifié CE-IVD (ou FDA), c'est possible via le SDK — la conformité réglementaire relève du publieur du module.</p>
+                </div>
             </div>
-            <div class="tarif-card">
-                <h3>Enterprise</h3>
-                <h2>Sur mesure</h2>
-                <p>Pour les institutions et hôpitaux</p>
-                <a class="tarif-contact" href="#">Nous contacter</a>
-                <ul>
-                    <li>Tous les modules Team</li>
-                    <li>Utilisateurs illimités</li>
-                    <li>Modules personnalisés sur demande</li>
-                    <li>Support dédié 24/7</li>
-                    <li>Conformité HIPAA/RGPD garantie</li>
-                    <li>Audit de sécurité annuel</li>
-                    <li>Infrastructure dédiée disponible</li>
-                    <li>Stockage cloud illimité</li>
-                    <li>Contrat de service personnalisé</li>
-                </ul>
+
+            <div class="faq-item">
+                <button class="faq-toggle">
+                    <span>Mes données VCF quittent-elles mon poste ?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Jamais par défaut. Le noyau et les modules système fonctionnent entièrement en local, sans télémétrie. Les modules premium qui effectuent des prédictions ML fonctionnent également localement avec les poids téléchargés. Vous restez en contrôle de vos données.</p>
+                </div>
             </div>
+
+            <div class="faq-item">
+                <button class="faq-toggle">
+                    <span>Sur quelles plateformes puis-je l'installer ?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Windows 10/11, macOS 12+, et les principales distributions Linux (Ubuntu, Debian, Fedora). L'application est construite avec PySide6 / Qt — une base native, réactive et cross-platform.</p>
+                </div>
             </div>
-            <p class="tarif-note">Tous les prix sont hors taxes. Facturation mensuelle ou annuelle (-20%). <a class="conditions" href="#">Voir les conditions</a></p>
+
+            <div class="faq-item">
+                <button class="faq-toggle">
+                    <span>Comment développer et publier mon propre module ?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Un module est un dossier contenant un fichier manifest.json, un point d'entrée QML ou Python, et vos ressources. Vous empaquetez en .cvf (zip), signez, puis publiez sur le ClinStore. Nous prenons 30% sur les ventes payantes (standard de l'industrie).</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-toggle">
+                    <span>Pourquoi PySide6 / QML et pas une app web ?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Performance sur gros fichiers VCF (plusieurs Go), intégration native avec le système de fichiers, et expérience utilisateur fluide sans dépendance à un navigateur. QML permet aux développeurs tiers d'écrire des interfaces riches avec un langage déclaratif accessible.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-toggle">
+                    <span>Le code source est-il accessible ?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Le SDK ClinVCF est entièrement open source sous licence MIT, hébergé sur GitHub — vous pouvez l'auditer, l'utiliser comme base pour vos propres modules, et contribuer à son évolution. Le noyau ClinVCF-OS, en revanche, est un logiciel propriétaire : son code source n'est pas public, mais son utilisation est libre et gratuite.</p>
+                </div>
+            </div>
+
         </div>
     </section>
 
     <section id="download-section" class="download-section">
         <div class="container">
             <div class="download-header">
-                <h2>Téléchargez ClinVCF-OS</h2>
-                <p>Disponible pour Windows, macOS et Linux. Votre système d'exploitation sera détecté automatiquement.</p>
+                <h2 data-i18n="download-title">Téléchargez ClinVCF-OS</h2>
+                <p data-i18n="download-subtitle">Disponible pour Windows, macOS et Linux. Votre système d'exploitation sera détecté automatiquement.</p>
             </div>
-
             <div class="download-list">
                 <div class="download-group">
-                    <h3 class="os-label">Liens de téléchargement</h3>
+                    <h3 data-i18n="download-links-label" class="os-label">Liens de téléchargement</h3>
                     <a href="#" class="download-link" id="windows-link" data-os="windows">
                         <span class="download-name">
                             <span class="download-os">Windows</span>
@@ -338,9 +415,8 @@
         </div>
     </section>
 
-
-
-
-<script src="scripts/download.js"></script>
+    <script src="scripts/download.js"></script>
+    <script src="scripts/translate.js"></script>
+    <script src="scripts/faq.js"></script>
 </body>
 </html>

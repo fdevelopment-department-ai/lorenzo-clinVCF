@@ -461,7 +461,6 @@ header.scrolled {
 .download-section {
     background: linear-gradient(135deg, #f8f9fa 0%, #f0f1f3 100%);
     padding: 80px 24px;
-    margin: 80px 0;
     border-top: 1px solid rgba(0, 0, 0, 0.08);
     border-bottom: 1px solid rgba(0, 0, 0, 0.08);
 }
@@ -1339,4 +1338,99 @@ header.scrolled {
 
 .download-link.btn--highlight .download-name span:not(.download-os) {
     color: var(--encre);
+}
+
+.faq-section {
+    padding: 80px 24px;
+    background: white;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.faq-container {
+    max-width: 860px;
+    margin: 0 auto;
+}
+
+.faq-section h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--encre);
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.faq-section > .faq-container > p {
+    text-align: center;
+    color: var(--texte-secondaire);
+    font-size: 1.05rem;
+    margin-bottom: 48px;
+}
+
+.faq-item {
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 0;
+    border-bottom: 1px solid var(--gris-200);
+}
+
+.faq-item:first-of-type {
+    border-top: 1px solid var(--gris-200);
+}
+
+.faq-toggle {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: none;
+    border: none;
+    padding: 22px 0;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #1e3a8a;
+    cursor: pointer;
+    text-align: left;
+    font-family: inherit;
+    gap: 24px;
+}
+
+.faq-toggle:hover {
+    color: var(--accent-bleu);
+    background: none;
+}
+
+.faq-item.active .faq-toggle {
+    color: #1e3a8a;
+}
+
+.faq-icon {
+    font-size: 1.3rem;
+    color: var(--gris-400);
+    font-weight: 300;
+    flex-shrink: 0;
+    line-height: 1;
+}
+
+.faq-item.active .faq-icon {
+    color: var(--encre);
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+    padding: 0;
+}
+
+.faq-item.active .faq-answer {
+    max-height: 400px;
+    padding-bottom: 22px;
+}
+
+.faq-answer p {
+    color: var(--texte-secondaire);
+    line-height: 1.8;
+    font-size: 0.97rem;
+    margin: 0;
 }

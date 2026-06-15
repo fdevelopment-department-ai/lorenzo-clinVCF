@@ -21,7 +21,7 @@ export function PhilosophySection() {
   ];
 
   return (
-    <section id="philosophy" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
+    <section id="philosophy" className="py-20 px-4 sm:px-6 lg:px-8 bg-slate-100">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
@@ -32,21 +32,21 @@ export function PhilosophySection() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-3 gap-8 items-stretch">
           {pillars.map((pillar) => (
             <div
               key={pillar.number}
-              className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow"
+              className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow h-full flex flex-col"
             >
-              <div className="flex items-center justify-center w-16 h-16 bg-blue-100 rounded-full mb-6">
-                <span className="text-2xl font-bold text-blue-600">
+              <div className="flex items-center justify-center w-16 h-16 bg-sky-100 rounded-full mb-6">
+                <span className="text-2xl font-bold text-sky-900">
                   {pillar.number}
                 </span>
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">
                 {pillar.title}
               </h3>
-              <p className="text-gray-600 leading-relaxed">{pillar.description}</p>
+              <p className="text-gray-600 leading-relaxed flex-1">{pillar.description}</p>
             </div>
           ))}
         </div>

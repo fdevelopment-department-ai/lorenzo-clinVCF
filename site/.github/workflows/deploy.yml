@@ -1,0 +1,24 @@
+name: Déploiement Continu FTP
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  deploy:
+    name: Envoyer les fichiers sur le serveur
+    runs-on: ubuntu-latest
+
+    steps:
+      -name: Récupération du code source
+        uses: actions/checkout@v4
+
+      -name: Synchronisation FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+
+          server-dir: /clinVCF/lorenzo/

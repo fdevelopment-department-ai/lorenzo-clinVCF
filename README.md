@@ -9,7 +9,7 @@ Bienvenue dans le dépôt officiel du projet **ClinVCF-OS** développé dans le 
 Le projet est structuré de manière simple et standard pour un site web statique :
 
 * **`index.html`** : Fichier principal du site. Il contient toute la structure sémantique du site (Header, Navbar, Hero section, sections Philosophie, Modules, ClinStore, SDK, Documentation, Tarifs, FAQ et la section de téléchargement).
-* **`styles.css`** : Feuille de style principale. Elle centralise les variables de design (couleurs, polices Inter, thèmes) et gère l'affichage responsive et moderne du site.
+* **`styles/`** : Feuilles de styles. Elles gérent les variables de design (couleurs, polices Inter, thèmes) et gère l'affichage responsive et moderne du site.
 * **`scripts/`** : Dossier contenant la logique JavaScript du site (comme la gestion dynamique des téléchargements ou des interactions).
 
 ---

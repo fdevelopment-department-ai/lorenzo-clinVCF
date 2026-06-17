@@ -11,10 +11,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      -name: Récupération du code source
+     - name: Récupération du code source
         uses: actions/checkout@v4
 
-      -name: Synchronisation FTP
+     - name: Synchronisation FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ${{ secrets.FTP_SERVER }}
